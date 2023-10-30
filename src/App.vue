@@ -4,6 +4,7 @@
       <BarraLateral @aoTemaAlterado="trocarTema" />
     </div>
     <div class="column is-three-quarter conteudo">
+      <NotificacaoBox />
       <router-view></router-view>
     </div>
   </main>
@@ -12,11 +13,13 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import BarraLateral from "./components/BarraLateral.vue";
+import NotificacaoBox from "./components/NotificacaoBox.vue";
 
 export default defineComponent({
   name: "App",
   components: {
     BarraLateral,
+    NotificacaoBox
   },
   data() {
     return {
